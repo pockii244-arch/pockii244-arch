@@ -1,89 +1,69 @@
 body {
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    background-color: #f5f5f0; 
+    background-color: #f5f5f0; /* Soft Beige */
     margin: 0;
-    /* Use Flexbox to center everything in the viewport */
-    display: flex;
-    justify-content: center; /* Horizontal center */
-    align-items: center;     /* Vertical center */
-    min-height: 100vh;       /* Ensure it takes full screen height */
-    color: #4a4a4a;
-}
-
-.container {
-    /* This ensures the content stays centered even if screen size changes */
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    padding: 20px;
+    min-height: 100vh;
+    color: #4a4a4a;
 }
 
-h1 {
-    font-weight: 300;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
+nav {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #a8a096;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
     color: #2d2d2d;
 }
 
-.subtitle {
-    font-size: 1rem;
-    color: #8c8c8c;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Centers content vertically */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .card {
-    /* Pure White Card */
-    background: #ffffff; 
-    padding: 50px 40px;
+    background: #ffffff; /* Pure White */
+    padding: 40px;
     border-radius: 20px;
-    /* Very soft shadow */
     box-shadow: 0 10px 30px rgba(0,0,0,0.03); 
-    max-width: 400px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
 }
 
-h2 {
-    font-weight: 400;
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-}
-
-p {
-    line-height: 1.6;
-    font-size: 0.95rem;
-    color: #707070;
-}
+h1 { font-weight: 300; color: #2d2d2d; margin-bottom: 5px; }
+.subtitle { color: #8c8c8c; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; margin-bottom: 30px; }
+p { line-height: 1.6; color: #707070; font-size: 0.95rem; }
 
 .btn {
     display: inline-block;
-    margin-top: 25px;
-    padding: 12px 30px;
-    /* Soft Muted Grey-Brown */
-    background-color: #a8a096; 
+    margin: 10px;
+    padding: 12px 25px;
+    background-color: #a8a096;
     color: white;
     text-decoration: none;
     border-radius: 30px;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #8e867d;
-    transform: translateY(-2px);
-}
-
-.links a {
-    display: inline-block;
-    margin-top: 30px;
-    color: #a8a096;
-    text-decoration: none;
     font-size: 0.85rem;
-    border-bottom: 1px solid transparent;
+    transition: 0.3s;
 }
 
-.links a:hover {
-    border-bottom: 1px solid #a8a096;
-}
-
+.btn:hover { background-color: #8e867d; transform: translateY(-2px); }
