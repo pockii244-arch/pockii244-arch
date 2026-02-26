@@ -1,59 +1,85 @@
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    /* Soft Beige Background */
+    background-color: #f5f5f0; 
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    text-align: center;
+    color: #4a4a4a;
 }
 
 .container {
-    max-width: 600px;
+    text-align: center;
     padding: 20px;
 }
 
 h1 {
-    color: #1a1a1a;
-    margin-bottom: 5px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    color: #2d2d2d;
 }
 
 .subtitle {
-    color: #666;
-    font-size: 1.1rem;
-    margin-bottom: 30px;
+    font-size: 1rem;
+    color: #8c8c8c;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .card {
-    background: white;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    /* Pure White Card */
+    background: #ffffff; 
+    padding: 50px 40px;
+    border-radius: 20px;
+    /* Very soft shadow */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03); 
+    max-width: 400px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 0.95rem;
+    color: #707070;
 }
 
 .btn {
     display: inline-block;
-    background-color: #007bff;
+    margin-top: 25px;
+    padding: 12px 30px;
+    /* Soft Muted Grey-Brown */
+    background-color: #a8a096; 
     color: white;
-    padding: 12px 25px;
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    margin-top: 20px;
-    transition: 0.3s;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #0056b3;
-}
-
-.links {
-    margin-top: 25px;
+    background-color: #8e867d;
+    transform: translateY(-2px);
 }
 
 .links a {
-    color: #666;
+    display: inline-block;
+    margin-top: 30px;
+    color: #a8a096;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    border-bottom: 1px solid transparent;
 }
+
+.links a:hover {
+    border-bottom: 1px solid #a8a096;
+}
+
