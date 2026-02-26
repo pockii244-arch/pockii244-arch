@@ -2,35 +2,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap');
 
 body {
-    /* Updated Font to Noto Sans */
     font-family: 'Noto Sans', sans-serif;
-    background-color: #f5f5f0; 
+    background-color: #f5f5f0; /* Soft Beige */
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
     color: #4a4a4a;
+    transition: all 0.5s ease;
 }
 
+/* Minimal Navigation */
 nav {
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 40px;
     display: flex;
-    gap: 25px;
+    gap: 35px;
 }
 
 nav a {
     text-decoration: none;
     color: #a8a096;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
+    font-weight: 400;
     transition: 0.3s;
 }
 
-nav a:hover { color: #2d2d2d; }
+nav a:hover {
+    color: #2d2d2d;
+    letter-spacing: 3px;
+}
 
+/* Balanced Layout Container */
 .container {
     display: flex;
     flex-direction: column;
@@ -38,60 +44,70 @@ nav a:hover { color: #2d2d2d; }
     justify-content: center;
     flex-grow: 1;
     width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-/* Updated Card for About Me layout */
-.card {
-    background: #ffffff;
+    max-width: 800px; /* Limits content width for better readability */
     padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.03); 
-    max-width: 700px; /* Widened to fit image and text side-by-side */
-    width: 100%;
-    display: flex;
-    align-items: center;
-    text-align: left; /* Changed from center to accommodate the left-side image */
-    gap: 30px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
-/* Profile Image Styling */
-.profile-img {
-    width: 150px; /* Medium-sized */
-    height: 150px;
-    border-radius: 50%; /* Makes it a circle */
-    object-fit: cover;
-    border: 3px solid #f5f5f0;
-    flex-shrink: 0; /* Prevents the image from squishing */
+/* Modern Content Header */
+h1 {
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #2d2d2d;
+    margin: 0;
+    letter-spacing: -1px;
 }
 
-.card-content {
-    flex: 1;
+.subtitle {
+    color: #a8a096;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.75rem;
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
 
-h1 { font-weight: 300; color: #2d2d2d; margin-bottom: 5px; }
-p { line-height: 1.6; color: #707070; font-size: 0.95rem; }
+/* Elegant Section Divider */
+.divider {
+    width: 40px;
+    height: 1px;
+    background-color: #a8a096;
+    margin: 30px 0;
+}
 
+/* Aesthetic Button */
 .btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background-color: #a8a096;
-    color: white;
+    padding: 15px 40px;
+    background-color: #ffffff; /* White button on beige bg */
+    color: #a8a096;
     text-decoration: none;
-    border-radius: 30px;
-    font-size: 0.85rem;
-    transition: 0.3s;
-}
-/* Helper class to center button inside the card */
-.centered-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 150px; /* Adjust height as needed */
+    border-radius: 2px; /* Subtle sharp edges for a high-end feel */
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid #e0e0da;
+    transition: all 0.4s ease;
+    margin-top: 20px;
 }
 
-.centered-card .btn {
-    margin-top: 0; /* Removes top margin for perfect vertical centering */
+.btn:hover {
+    background-color: #a8a096;
+    color: #ffffff;
+    border-color: #a8a096;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* About Page Specific: Profile Image */
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 30px;
+    border: 1px solid #e0e0da;
+    padding: 10px;
+    background: #fff;
 }
