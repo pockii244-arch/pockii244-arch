@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naipaporn | UX/UI & Front-End Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Naipaporn Chomneandomerongkarn</h1>
+        <p class="subtitle">Media Student | Aspiring Front-End Developer</p>
+        
+        <div class="card">
+            <h2>UX/UI Design Portfolio</h2>
+            <p>Explore my latest design work, user research, and interactive prototypes.</p>
+            <a href="portfolio.pdf" class="btn" target="_blank">View PDF Portfolio</a>
+        </div>
+
+        <div class="links">
+            <a href="https://www.linkedin.com/in/naipaporn-chomneandomerongkarn-5a4baa320">LinkedIn</a>
+        </div>
+    </div>
+</body>
+</html>
